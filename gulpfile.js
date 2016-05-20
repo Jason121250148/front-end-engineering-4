@@ -21,6 +21,7 @@ gulp.task("build", ["clean"], (cb) => {
         "build-js",
         "build-less",
         "build-html",
+        "server:start",
         cb
     );
 });
@@ -73,4 +74,8 @@ gulp.task("build-html", () => {
                 manifest
             }))
             .pipe(gulp.dest(DEST_PATH));
+});
+
+gulp.task("server:start", () => {
+    require("./index");
 });
