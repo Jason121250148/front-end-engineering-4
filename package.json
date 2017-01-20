@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
@@ -33,6 +35,7 @@
     "gulp-uglifycss": "^1.0.6",
     "jquery": "^1.12.3",
     "jquery.transit": "^0.9.12",
+    "mocha": "^3.2.0",
     "run-sequence": "^1.2.0"
   }
 }
